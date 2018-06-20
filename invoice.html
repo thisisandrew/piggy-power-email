@@ -33,11 +33,11 @@ title: Email Preview
 		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="white-box" id="order-summary">
 		                        	<tr>
 		                        		<td class="heading">
-		                        			<h1>ORDER SUMMARY</h1>
+		                        			<h1>INVOICE SUMMARY</h1>
 	                                    </td>
 	                                </tr>
-                                                
-                                    {{layout handle="sales_email_order_items" order=$order}}	
+
+									{{layout area="frontend" handle="sales_email_order_invoice_items" invoice=$invoice order=$order}}
 		                        </table>
 
 		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="plain-box pink-border-btm">
