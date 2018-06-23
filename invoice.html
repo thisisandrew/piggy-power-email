@@ -21,7 +21,7 @@ title: Email Preview
 		                                    	Thank you for your order placed on <em>{{var order.getCreatedAtFormated('long')}}</em>.
 											</p>
 											<p>
-												Please find attached you invoice as a PDF.
+												Please find attached your invoice as a PDF.
 		                                    </p>
 
 		                                    <p>
@@ -37,7 +37,7 @@ title: Email Preview
 	                                    </td>
 	                                </tr>
 
-									{{layout area="frontend" handle="sales_email_order_invoice_items" invoice=$invoice order=$order}}
+									{{layout handle="sales_email_order_items" order=$order}}
 		                        </table>
 
 		                        <table border="0" cellpadding="20" cellspacing="0" width="100%" class="plain-box pink-border-btm">
